@@ -5,7 +5,7 @@ const w=require(path.join(__dirname,"w.js"));
 function nodeRestart(opt,mute) {
   var ee,events;
   if (mute) {
-    ee=require("events").eventEmitter
+    ee=require("events").EventEmitter
     events=new ee();
   }
   function event(type,ev,msg,arg) {
