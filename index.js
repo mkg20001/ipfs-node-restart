@@ -69,9 +69,9 @@ function nodeRestart(opt,mute) {
       return fail(i);
     }
     if (opt.restart) {
-      if (opt["restart.script"]) {
+      if (opt["restart-script"]) {
         event("log","restart","Restarting...");
-        cp.execFile(opt["restart.script"],function(e,std,ste) {
+        cp.execFile(opt["restart-script"],function(e,std,ste) {
           if (e) {
             event("error","restart.error","Restart failed with error: %s",new Error(e.toString()));
             return fail(i);
@@ -102,7 +102,7 @@ function nodeRestart(opt,mute) {
         return nodeRestart(i);
       } else {
         out=out.split("\n").filter(function(l) {return !!l;});
-        if (out.length<opt["min.nodes"]) {
+        if (out.length<opt["min-nodes"]) {
           return nodeConnect(i);
         } else {
           return fine(i);

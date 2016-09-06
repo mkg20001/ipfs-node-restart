@@ -23,14 +23,14 @@ const optionDefinitions = [
     defaultValue:false
   },
   {
-    name:"restart.script",
+    name:"restart-script",
     alias:"s",
     type:"string",
     describe:"Path to restart script",
     defaultValue:""
   },
   {
-    name:"min.nodes",
+    name:"min-nodes",
     alias:"m",
     type:"number",
     describe:"Minimum nodes online",

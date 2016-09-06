@@ -7,16 +7,14 @@ Options:
   -i, --interval        Scan Interval                   [number] [default: 1000]
   -b, --binary          Path to IPFS binary           [string] [default: "ipfs"]
   -r, --restart         Allow restart                 [boolean] [default: false]
-  -s, --restart.script  Path to restart script            [string] [default: ""]
-  -m, --min.nodes       Minimum nodes online               [number] [default: 4]
-  -p, --path            Path to IPFS repo
-                                        [string] [default: "/home/user/.ipfs"]
+  -s, --restart-script  Path to restart script            [string] [default: ""]
+  -m, --min-nodes       Minimum nodes online               [number] [default: 4]
+  -p, --path            Path to IPFS repo [string] [default: "/home/user/.ipfs"]
   -h, --help            Show help                                      [boolean]
 
 Copyright (C) 2015 Maciej Krüger
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
 ```
 
 # Restart Script
